@@ -2,14 +2,14 @@
 
 /* variables */
 
-let underscore = document.querySelector('.underscore')
+const underscore = document.querySelector('.underscore');
 let secretWordText = document.createTextNode('');
 underscore.appendChild(secretWordText);
 
-let userText = document.querySelector('.userText');
-let fails = document.querySelector('.fail')
-let illustration = document.querySelector('.illustration');
-let keyboard = document.querySelector('.keyboard');
+const userText = document.querySelector('.userText');
+const fails = document.querySelector('.fail');
+const illustration = document.querySelector('.illustration');
+const keyboard = document.querySelector('.keyboard');
 
 let secretWord = []; // stockage du mot secret
 let findWord = []; // stockage du mot à deviner
@@ -19,7 +19,7 @@ let life = 3;
 
 /* Start btn fonction */
 
-let btnStart = document.querySelector('.btnStart');
+const btnStart = document.querySelector('.btnStart');
 btnStart.dataset.state = 'start'; // on crée un dataset que l'on appelle "state" avec la valeur "start";
 
 btnStart.addEventListener('click', () => {
@@ -98,7 +98,6 @@ function displayKeyboard() {
 		});
 	}
 }
-
 
 function comparer(letter) {
 
